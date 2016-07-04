@@ -1,4 +1,20 @@
 Rails.application.routes.draw do
+  # get 'photos/index'
+
+  # get 'photos/new'
+
+  # get 'photos/edit'
+
+  # get 'movies/index'
+
+  # get 'movies/new'
+
+  # get 'movies/edit'
+
+  resources :photos, only: [:new, :create]
+
+  root to: 'photos#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
